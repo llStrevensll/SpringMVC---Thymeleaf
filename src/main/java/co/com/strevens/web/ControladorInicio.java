@@ -1,7 +1,7 @@
 package co.com.strevens.web;
 
-import co.com.strevens.dao.IPersonaDao;
 import co.com.strevens.domain.Persona;
+import co.com.strevens.servicio.IPersonaService;
 import java.util.ArrayList;
 import java.util.Arrays;
 import lombok.extern.slf4j.Slf4j;
@@ -18,12 +18,13 @@ public class ControladorInicio {
     @Value("${index.saludo}")
     private String saludo;*/
     
+    
     @Autowired //Inyectar
-    private IPersonaDao personaDao;
+    private IPersonaService personaService;
     
     @GetMapping("/")
     public String inicio(Model model){
-        var personas = personaDao.findAll();
+        var personas = personaService.listarPersona();
         
         log.info("Ejecutando el controlador Spring MVC");
         
