@@ -1,4 +1,4 @@
-package co.com.strevens.HolaMundoThymeleaf;
+package co.com.strevens;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

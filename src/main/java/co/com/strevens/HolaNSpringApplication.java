@@ -1,4 +1,4 @@
-package co.com.strevens.HolaMundoThymeleaf;
+package co.com.strevens;
 
 
 import org.springframework.boot.SpringApplication;
