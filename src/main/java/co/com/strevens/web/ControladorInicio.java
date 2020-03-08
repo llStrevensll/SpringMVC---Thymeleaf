@@ -55,4 +55,11 @@ public class ControladorInicio {
         model.addAttribute("persona", persona);
         return "modificar";
     }
+    
+    
+    @GetMapping("/eliminar")
+    public String eliminar(Persona persona){
+        personaService.eliminar(persona);
+        return "redirect:/";
+    }
 }
