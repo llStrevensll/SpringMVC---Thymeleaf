@@ -2,6 +2,8 @@ package co.com.strevens.domain;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
 import lombok.Data;
 
 //Notacion de lombok generar lo metodos get y set, hash code, tostring (mirar ventana navigator)
@@ -15,9 +17,15 @@ public class Persona implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idPersona;
+    
+    @NotEmpty
     private String nombre;
+    @NotEmpty
     private String apellido;
+    @NotEmpty
+    @Email
     private String email;
+    
     private String telefono;
     
 }
