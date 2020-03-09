@@ -16,6 +16,9 @@
                 <a th:href="@{/(lang=es)}">ES</a> |
                 <a th:href="@{/(lang=en)}">EN</a> |
                 <span> [[ #{plantilla.pie-pagina} ]] <a href="https://github.com/llStrevensll" target="_blank">llStrevensll</a></span>
+                <form method="POST" th:action="@{/logout}"> 
+                    <a href="#" onclick="this.parentNode.submit();">Logout</a>
+                </form>
             </div>
             
         </footer>
