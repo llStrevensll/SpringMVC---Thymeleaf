@@ -5,16 +5,43 @@
         <title>Login</title>
     </head>
     <body>
-        <h1>Login</h1>
-        
-        <form method="POST" th:action="@{/login}">
-            <label for="username">Username:</label>
-            <input type="text" name="username" id="username"/>
-            <br/>
-            <label for="password">Passowrd:</label>
-            <input type="password" name="password" id="password"/>
-            <br/>
-            <input type="submit" value="Login"/>
-        </form>
+        <header th:replace="layout/plantilla :: header"></header>
+
+        <section id="actions" class="py-4 mb-4 bg-light">
+            <div class="container">
+                <div class="row">
+                    <!-- se puede agregar botones -->
+                </div>
+            </div>
+        </section>
+
+        <section id="login">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Login</h4>
+                            </div>
+                            <div class="card-body">
+                                <form method="POST" th:action="@{/login}">
+                                    <div class="form-group">
+                                        <label for="username">Username:</label>
+                                        <input type="text" name="username" id="username"/>
+                                    </div>
+                                    <div>
+                                        <label for="password">Passowrd:</label>
+                                        <input type="password" name="password" id="password"/>
+                                    </div>
+                                    
+                                    <input type="submit" value="Login" class="btn btn-primary btn-clock"/>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer th:replace="layout/plantilla :: footer"> </footer>
     </body>
 </html>
