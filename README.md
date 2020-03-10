@@ -1,6 +1,11 @@
 # Spring---Thymeleaf
 Spring Boot -> SpringMVC-JPA-Security - Thymeleaf
 
+**Arquitectura**
+
+<p align="center">
+  <img src="https://github.com/llStrevensll/SpringMVC---Thymeleaf/blob/master/images-git/Arquitectura%20Spring.png?raw=true" alt="app"/>
+</p>
 
 **App**
 
